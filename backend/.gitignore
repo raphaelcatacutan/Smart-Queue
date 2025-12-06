@@ -2,3 +2,4 @@ package-lock.json
 data/**
 dist/**
 !data/convos/*.md
+.env.local
