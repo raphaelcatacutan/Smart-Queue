@@ -7,7 +7,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import routes from "./routes/index.js";
-import { initializeSchema, seedInitialData } from "./config/schema.js";
+// import { initializeSchema, seedInitialData } from "./config/schema.js";
 import { sessionMiddleware, recordSession } from "./middleware/session.js";
 
 dotenv.config();

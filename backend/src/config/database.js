@@ -22,4 +22,4 @@ const __dirname = path.dirname(__filename);
 // Enable foreign keys
 // db.pragma("foreign_keys = ON");
 
-export default db;
+// export default db;
