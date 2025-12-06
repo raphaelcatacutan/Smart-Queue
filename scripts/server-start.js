@@ -1,6 +1,8 @@
 const { spawn } = require('child_process');
 const { execSync } = require('child_process');
-const IP = `172.20.31.62`
+require('dotenv').config({ path: './backend/.env.local' });
+
+const IP = process.env.SERVER_IP || 'localhost';
 
 // Determine if we're running in production mode
 const isProduction = process.argv.includes('--production') || process.env.NODE_ENV === 'production';

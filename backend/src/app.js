@@ -13,11 +13,12 @@ import { sessionMiddleware, recordSession } from "./middleware/session.js";
 dotenv.config();
 
 const app = express();
+console.warn(`${process.env.SERVER_IP}`)
 const allowedOrigins = [
-  `${process.env.NEXT_PUBLIC_API_URL}:3000`,
-  `${process.env.NEXT_PUBLIC_API_URL}:3001`,
-  `${process.env.NEXT_PUBLIC_API_URL}:3002`,
-  `http://172.20.31.62:4000`,
+  `http://${process.env.SERVER_IP}:3000`,
+  `http://${process.env.SERVER_IP}:3001`,
+  `http://${process.env.SERVER_IP}:3002`,
+  `http://${process.env.SERVER_IP}:4000`,
   `http://localhost:4000`,
   `http://localhost:3000`,
   `http://localhost:3001`,

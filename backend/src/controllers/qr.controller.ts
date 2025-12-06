@@ -1,11 +1,10 @@
 import QRCode from 'qrcode';
 import { Request, Response } from 'express';
-
-const IP = '172.20.31.62'
+import { SERVER_IP } from '../config/env.js';
 
 export async function getQR(req: Request, res: Response) {
   try {
-    const serverIP = IP;
+    const serverIP = SERVER_IP;
     const protocol = req.protocol;
     
     // Generate QR codes for both ports
